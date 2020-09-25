@@ -18,11 +18,12 @@ document.getElementById('btn_gen').addEventListener('click', function() {
 
     dat = new Date(personGenerator.randomIntNumber(), personGenerator.randomMont(), personGenerator.randomDay()); // new Date() - сама генерирует правильные даты, т.е. 30 февраля она не позволит написать:
     var dat_full = dat.getDate() + " " + monthes[dat.getMonth()] + " " + dat.getFullYear();
-    console.log(dat);
+    console.log(personGenerator.randomProf());
 
     document.getElementById('firstNameOutput').innerText = personGenerator.randomFirstName();
     document.getElementById('twoNameOutput').innerText = personGenerator.randomTwoName();
     document.getElementById('surnameOutput').innerText = personGenerator.randomSurname();
+    document.getElementById('profOutput').innerText = personGenerator.randomProf();
     document.getElementById('birthYearOutput').innerText = dat_full + " г.р.";
     document.getElementById('genderOutput').innerText = gen;
 });
