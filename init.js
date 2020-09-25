@@ -16,8 +16,7 @@ function gender() {
 document.getElementById('btn_gen').addEventListener('click', function() {
     gender();
 
-// new Date() - сама генерирует правильные даты, т.е. 30 февраля она не позволит написать:
-    dat = new Date(personGenerator.randomIntNumber(), personGenerator.randomMont(), personGenerator.randomDay());
+    dat = new Date(personGenerator.randomIntNumber(), personGenerator.randomMont(), personGenerator.randomDay()); // new Date() - сама генерирует правильные даты, т.е. 30 февраля она не позволит написать:
     var dat_full = dat.getDate() + " " + monthes[dat.getMonth()] + " " + dat.getFullYear();
     console.log(dat);
 
